@@ -7,6 +7,7 @@ namespace Lab3CSharp
     public class MyString
     {
         private char[] s;
+        private int count = 0;
         public MyString(string s2)
         {
             s = s2.ToCharArray();
@@ -25,7 +26,6 @@ namespace Lab3CSharp
             {
                 char[] s2 = { 'a', 'e', 'i', 'u', 'o', 'y' };
 
-                int count = 0;
                 for (int i = 0; i < s.Length; i++)
                 {
                     for (int j = 0; j < s2.Length; j++)
