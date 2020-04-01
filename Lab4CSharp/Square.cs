@@ -7,7 +7,7 @@ namespace Lab4CSharp
     class Square
     {
         double x1, y1;
-        public double A;
+        double A;
         public Square()
         {
             x1 = y1 = 0;
@@ -28,10 +28,12 @@ namespace Lab4CSharp
         {
             return A * A;
         }
-        public double P()
-        {
-            return 4 * A;
-        }
+        //public double P()
+        //{
+        //    return 4 * A;
+        //}
+        public double P { get { return 4*A; } }
+
         public double X1 { get { return x1; } }
         public double Y1 { get { return y1; } }
         public double X2 { get { return x1; } }
@@ -40,6 +42,8 @@ namespace Lab4CSharp
         public double Y3 { get { return y1 + A; } }
         public double X4 { get { return x1 + A; } }
         public double Y4 { get { return y1; } }
+        public double a { get { return A; } }
+
         public static Square operator +(Square s1, Square s2)
         {
             Square s3 = new Square(s1.x1, s1.y1, s1.A + s2.A);
