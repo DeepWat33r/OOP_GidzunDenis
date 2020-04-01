@@ -11,9 +11,12 @@ namespace Lab2
         static void Main(string[] args)
         {
             MyText text = new MyText();
+
             text.AddText("123456789");
+            //text.Text = null;
             text.AddText("123dfghedjh456789");
             text.Clear();
+            
             text.AddText("dsaad gedgher asd");
             text.AddText("12345");
             text.AddText("dsaad gedgher asdq  w qeqweq");
@@ -23,7 +26,7 @@ namespace Lab2
             text.Remove(1);
             text.RemoveAll("dsa");
             text.ToUpperText();
-            for (int i = 0; i < text.Text.Count; i++)
+            for (int i = 0; i < text.Count(); i++)
             {
                 Console.WriteLine(text.Text[i].GetString());
             }
@@ -33,3 +36,4 @@ namespace Lab2
     }
 
 }
+

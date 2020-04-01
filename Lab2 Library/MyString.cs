@@ -32,10 +32,10 @@ namespace Lab2_Library
         }
         public void ToUpper()
         {
-            if (s.Length > 0 && char.IsLetter(s[0])) s[0] = char.ToUpper(s[0]);
+            if (s.Length > 0 ) s[0] = char.ToUpper(s[0]);
             for (int i = 1; i < s.Length; i++)
             {
-                if (s[i - 1] == ' ' && char.IsLetter(s[i])) s[i] = char.ToUpper(s[i]);
+                if (s[i - 1] == ' ' ) s[i] = char.ToUpper(s[i]);
             }
         }
         public string GetString()

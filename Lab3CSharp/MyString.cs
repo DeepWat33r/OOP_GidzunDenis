@@ -24,7 +24,7 @@ namespace Lab3CSharp
         {
             get
             {
-                char[] s2 = { 'a', 'e', 'i', 'u', 'o', 'y' };
+                char[] s2 = { 'a', 'e', 'i', 'u', 'o', 'y', 'A', 'E', 'I', 'U', 'O', 'Y' };
 
                 for (int i = 0; i < s.Length; i++)
                 {
