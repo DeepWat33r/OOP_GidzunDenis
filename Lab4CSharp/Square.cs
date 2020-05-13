@@ -24,16 +24,8 @@ namespace Lab4CSharp
             this.x1 = s.x1; this.y1 = s.y1;
             this.A = s.A;
         }
-        public double S()
-        {
-            return A * A;
-        }
-        //public double P()
-        //{
-        //    return 4 * A;
-        //}
+        public double S { get { return A * A; } }
         public double P { get { return 4*A; } }
-
         public double X1 { get { return x1; } }
         public double Y1 { get { return y1; } }
         public double X2 { get { return x1; } }
@@ -49,8 +41,12 @@ namespace Lab4CSharp
             Square s3 = new Square(s1.x1, s1.y1, s1.A + s2.A);
             return s3;
         }
-
         public static Square operator +(Square s1, double A)
+        {
+            Square s3 = new Square(s1.x1, s1.y1, s1.A + A);
+            return s3;
+        }
+        public static Square operator +(double A,Square s1)
         {
             Square s3 = new Square(s1.x1, s1.y1, s1.A + A);
             return s3;

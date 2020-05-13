@@ -12,9 +12,9 @@ public:
     Square();
     Square(double x1, double y1, double A);
     Square(const Square& s);
-    Square operator + (const Square& s2);
+    Square operator +(Square s2);
     Square operator+(double A);
-    Square operator/(const Square& s2);
+    Square operator/(Square s2);
     double& X1() 
     {
         return this->x1;
@@ -84,7 +84,7 @@ public:
         this->x1 = s.x1; this->y1 = s.y1;
         this->A = s.A;
     }
-    Square Square::operator + (const Square & s2)
+    Square Square::operator + (Square  s2)
     {
         Square s3(this->x1, this->y1, this->A + s2.A);
         return s3;
@@ -94,7 +94,7 @@ public:
         Square s3(this->x1, this->y1, this->A + A);
         return s3;
     }
-     Square Square::operator /(const Square& s2)
+     Square Square::operator /(Square s2)
     {
         Square s3(this->x1, this->y1, this->A / s2.A);
         return s3;
