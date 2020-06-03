@@ -25,6 +25,7 @@ namespace Lab6
                 {
                     Console.WriteLine(e.Message);
                 }
+                Console.WriteLine("fdfdg");
             }
         }
     }

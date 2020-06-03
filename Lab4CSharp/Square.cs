@@ -17,12 +17,12 @@ namespace Lab4CSharp
         {
             this.x1 = x1; this.y1 = y1;
             this.A = A;
-
+            if (A <= 0) throw new ArgumentException();
         }
         public Square(Square s)
         {
             this.x1 = s.x1; this.y1 = s.y1;
-            this.A = s.A;
+            this.A = s.A;           
         }
         public double S { get { return A * A; } }
         public double P { get { return 4*A; } }

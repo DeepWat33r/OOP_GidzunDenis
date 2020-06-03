@@ -20,7 +20,7 @@ public:
 
 int main()
 {
-    Calculate* arr[10];
+    Calculate* arr[1000];
     int k = 3;
     arr[0] = new Calculate(0.5, 2, 5.7);
     arr[1] = new Calculate(4, -1, 5.7);
